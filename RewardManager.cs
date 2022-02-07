@@ -11,6 +11,9 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 
+/*--------------------------------------------------------------------------------------------------------------
+    リワード広告実装スクリプト
+--------------------------------------------------------------------------------------------------------------*/
 public class RewardManager : MonoBehaviour
 {
     private RewardedAd rewardedAd;
@@ -25,10 +28,13 @@ public class RewardManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+/*--------------------------------------------------------------------------------------------------------------
+    Andorid_iOSのストアIDをここに入力
+--------------------------------------------------------------------------------------------------------------*/
 #if UNITY_ANDROID
-        string appId = "ca-app-pub-3582945866871283~8144577195";
+        string appId = "";
 #elif UNITY_IPHONE
-        string appId = "ca-app-pub-3582945866871283~9843022199";
+        string appId = "";
 #else
         string appId = "unexpected_platform";
 #endif
@@ -117,9 +123,9 @@ public class RewardManager : MonoBehaviour
     public void RequestRewardAd()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3582945866871283/9074515486";
+        string adUnitId = "";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3582945866871283/7029156595";
+        string adUnitId = "";
 #else
         string adUnitId = "unexpected_platform";
 #endif
@@ -158,9 +164,9 @@ public class RewardManager : MonoBehaviour
     public void RequestRewardAd_Watch()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3582945866871283/9074515486";
+        string adUnitId = "";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3582945866871283/7029156595";
+        string adUnitId = "";
 #else
         string adUnitId = "unexpected_platform";
 #endif
