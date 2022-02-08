@@ -231,7 +231,7 @@ public class AddressableManager : MonoBehaviour
             Debug.Log("Clear cache!");
         }
         else
-        { // 失敗しているのに、こっちが呼ばれない
+        {
             Debug.Log("Cache clear failed.");
         }
     }
